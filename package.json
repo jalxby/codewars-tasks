@@ -1,0 +1,7 @@
+{
+  "name": "codewars-tasks",
+  "version": "1.0.0",
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
+}
