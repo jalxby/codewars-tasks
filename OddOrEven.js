@@ -15,16 +15,10 @@
 // Input: [0, -1, -5]
 // Output: "even"
 
-function oddOrEven(array) {
-    let sum = 0
-    for (let i in array) {
-        sum += array[i]
-    }
-    if (sum % 2 === 0) {
-        return 'even'
-    }
-    return 'odd'
+function oddOrEven(arr) {
+    return arr.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even';
 }
-console.log(oddOrEven([0]))
+
+console.log(oddOrEven([0, 44, 65, 76, 22, 44, 66, 433, 5, 223, 44, 2, 5, 34, 7, 5, 52, 23, 235, 65]))
 console.log(oddOrEven([1]))
 console.log(oddOrEven([]))
